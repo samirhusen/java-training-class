@@ -498,6 +498,297 @@ void main() {
     System.out.println("New String: " + newStringQno25);
     System.out.println("---------------------------------------");
 
+//    26. Write a Java program to check whether a given string starts with the contents of another string.
+//
+//    Sample Output:
+//
+//    Red is favorite color. starts with Red? true
+//    Orange is also my favorite color. starts with Red? false
 
+    String string1Qno26 = "Red is favorite color.";
+    String string2Qno26 = "Orange is also my favorite color.";
+    String prefixQno26 = "Red";
+
+    System.out.println("Qno. (26)");
+    System.out.println(string1Qno26 + " starts with " + prefixQno26 + "? "
+            + string1Qno26.startsWith(prefixQno26));
+    System.out.println(string2Qno26 + " starts with " + prefixQno26 + "? "
+            + string2Qno26.startsWith(prefixQno26));
+    System.out.println("---------------------------------------");
+
+//    27. Write a Java program to get a substring of a given string between two specified positions.
+//
+//    Sample Output:
+//
+//    old = The quick brown fox jumps over the lazy dog.
+//    new = brown fox jumps
+
+    String originalQno27 = "The quick brown fox jumps over the lazy dog.";
+    // The start index is included; the end index is excluded. Indexes start at zero.
+    String substringQno27 = originalQno27.substring(10, 25);
+
+    System.out.println("Qno. (27)");
+    System.out.println("old = " + originalQno27);
+    System.out.println("new = " + substringQno27);
+    System.out.println("---------------------------------------");
+
+//    28. Write a Java program to create a character array containing the contents of a string.
+//
+//    Sample Output:
+//
+//    Java Exercises.
+
+    String stringQno28 = "Java Exercises.";
+    char[] charactersQno28 = stringQno28.toCharArray();
+
+    System.out.println("Qno. (28)");
+    // Passing a char array directly to println prints its characters.
+    System.out.println(charactersQno28);
+    System.out.println("---------------------------------------");
+
+
+//    29. Write a Java program to convert all the characters in a string to lowercase.
+//
+//    Sample Output:
+//
+//    Original String: The Quick BroWn FoX!
+//    String in lowercase: the quick brown fox!
+
+    String stringQno29 = "The Quick BroWn FoX!";
+
+    System.out.println("Qno. (29)");
+    System.out.println(stringQno29.toLowerCase());
+    System.out.println("---------------------------------------");
+
+//    30. Write a Java program to convert all the characters in a string to uppercase.
+//
+//    Sample Output:
+//
+//    Original String: The Quick BroWn FoX!
+//    String in uppercase: THE QUICK BROWN FOX!
+
+    System.out.println("Qno. (30)");
+    System.out.println(stringQno29.toLowerCase());
+    System.out.println("---------------------------------------");
+
+
+//    31. Write a Java program to trim any leading or trailing whitespace from a given string.
+//
+//            Sample Output:
+//
+//    Original String:  Java Exercises
+//    New String: Java Exercises
+//.....................................................
+//
+//    32. Write a Java program to find longest Palindromic Substring within a string.
+//
+//    Sample Output:
+//
+//    The given string is: thequickbrownfoxxofnworbquickthe
+//    The longest palindrome substring in the giv
+//    en string is; brownfoxxofnworb
+//    The length of the palindromic substring is: 16
+//.....................................................
+//
+//    33. Write a Java program to find all interleavings of given strings.
+//
+//    Sample Output:
+//
+//    The given strings are: WX  YZ    -->
+//    The interleavings strings are:
+//    YWZX
+//    WYZX
+//    YWXZ
+//    WXYZ
+//    YZWX
+//    WYXZ
+//.....................................................
+//
+//    34. Write a Java program to find the second most frequent character in a given string.
+//
+//    Sample Output:
+//
+//    The given string is: successes
+//    The second most frequent char in the string is: c
+//.....................................................
+//
+//    35. Write a Java program to print all permutations of a given string with repetition.
+//
+//    Sample Output:
+//
+//    The given string is: PQR
+//    The permuted strings are:
+//    PPP
+//    PPQ
+//    PPR
+//...
+//    RRP
+//    RRQ
+//    RRR
+//.....................................................
+//
+//    36. Write a Java program to check whether two strings are interliving of a given string. Assuming that the unique characters in both strings.
+//
+//    Sample Output:
+//
+//    The given string is: PMQNO
+//    The interleaving strings are MNO and PQ
+//    The given string is interleaving: true
+//
+//    The given string is: PNQMO
+//    The interleaving strings are MNO and PQ
+//    The given string is interleaving: false
+//.....................................................
+//
+//    37. Write a Java program to find length of the longest substring of a given string without repeating characters.
+//
+//    Sample Output:
+//
+//    Input String : pickoutthelongestsubstring
+//    The longest substring : [u, b, s, t, r, i, n, g]
+//    The longest Substring Length : 8
+//.....................................................
+//
+//    38. Write a Java program to print after removing duplicates from a given string.
+//
+//    Sample Output:
+//
+//    The given string is:  ramaresource.com
+//    After removing duplicates characters the new string is:
+//.....................................................
+//
+//    39. Write a Java program to find first non repeating character in a string.
+//
+//    Sample Output:
+//
+//    The given string is: gibblegabbler
+//    The first non repeated character in String is: i
+//.....................................................
+//
+//    40. Write a Java program to divide a string in n equal parts.
+//
+//    Sample Output:
+//
+//    The given string is: abcdefghijklmnopqrstuvwxy
+//    The string divided into 5 parts and they are:
+//
+//    abcde
+//    fghij
+//    klmno
+//    pqrst
+//    uvwxy
+//.....................................................
+//
+//    41. Write a Java program to remove duplicate characters from a given string presents in another given string.
+//
+//    Sample Output:
+//
+//    The given string is: the quick brown fox
+//    The given mask string is: queen
+//
+//    The new string is:
+//    th ick brow fox
+//.....................................................
+//
+//    42. Write a Java program to print list items containing all characters of a given word.
+//
+//    Sample Output:
+//
+//    The given strings are: rabbit   bribe   dog
+//    The given word is: bib
+//
+//    The strings containing all the letters of the given word are:
+//    rabbit
+//    bribe
+//.....................................................
+//
+//    43. Write a Java program to find the maximum occurring character in a string.
+//
+//    Sample Output:
+//
+//    The given string is: test string
+//    Max occurring character in the given string is: t
+//.....................................................
+//
+//    44. Write a Java program to reverse a string using recursion.
+//
+//    Sample Output:
+//
+//    The given string is: The quick brown fox jumps
+//    The string in reverse order is:
+//    spmuj xof nworb kciuq ehT
+//.....................................................
+//
+//    45. Write a Java program to reverse words in a given string.
+//
+//    Sample Output:
+//
+//    The given string is: Reverse words in a given string
+//    The new string after reversed the words: string given a in words Reverse
+//.....................................................
+//
+//    46. Write a Java program to reverse every word in a string using methods.
+//
+//    Sample Output:
+//
+//    The given string is: This is a test string
+//    The string reversed word by word is:
+//    sihT si a tset gnirts
+//.....................................................
+//
+//    47. Write a Java program to rearrange a string so that all same characters become d distance away.
+//
+//    Sample Output:
+//
+//    The given string is: accessories  --
+//    The string after arrange newly is:
+//    secrsecisao
+//
+//
+//.....................................................
+//
+//    48. Write a Java program to remove "b" and "ac" from a given string.
+//
+//    Sample Output:
+//
+//    The given string is: abrambabasc
+//    After removing the new string is: aramaasc
+//.....................................................
+//
+//    49. Write a Java program to find first non-repeating character from a stream of characters.
+//
+//    Sample Output:
+//
+//    String: godisgood
+//    Reading: g
+//    The first non-repeating character so far is:  g
+//    Reading: o
+//    The first non-repeating character so far is:  g
+//    Reading: d
+//    The first non-repeating character so far is:  g
+//    Reading: i
+//    The first non-repeating character so far is:  g
+//    Reading: s
+//    The first non-repeating character so far is:  g
+//    Reading: g
+//    The first non-repeating character so far is:  o
+//    Reading: o
+//    The first non-repeating character so far is:  d
+//    Reading: o
+//    The first non-repeating character so far is:  d
+//    Reading: d
+//    The first non-repeating character so far is:  i
+//.....................................................
+//
+//
+//    50. Write a Java program to count and print all the duplicates in the input string.
+//
+//    Sample Output:
+//
+//    The given string is:  ramaresource.com
+//    The duplicate characters and counts are:
+//    e  appears  2  times
+//    r  appears  2  times
+//.....................................................
 
 }
